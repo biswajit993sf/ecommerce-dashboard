@@ -37,6 +37,7 @@ Coded by www.creative-tim.com
 
 // Material Dashboard 2 React layouts
 import Dashboard from "layouts/dashboard";
+import AllPages from "layouts/all-pages";
 import Tables from "layouts/tables";
 import Billing from "layouts/billing";
 import RTL from "layouts/rtl";
@@ -56,6 +57,14 @@ const routes = [
     icon: <Icon fontSize="small">dashboard</Icon>,
     route: "/dashboard",
     component: <Dashboard />,
+  },
+  {
+    type: "collapse",
+    name: "All Pages",
+    key: "all-pages",
+    icon: <Icon fontSize="small">pages</Icon>,
+    route: "/all-pages",
+    component: <AllPages />,
   },
   {
     type: "collapse",
